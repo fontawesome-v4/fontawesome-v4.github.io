@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Font Awesome, the iconic font and CSS framework">
+  <meta name="author" content="Dave Gandy">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+  <title>Get Started with Font Awesome</title>
+  <!-- CSS
+  ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/pygments.css">
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-212023213-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = 'https:' == document.location.protocol ? 'https://ssl' : 'http://www' + '.google-analytics.com/ga.js';
+      var s = document.scripts[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body class="font-awesome v-get-started">
+  <div id="wrap">
+<div class="navbar navbar-inverse navbar-static-top hidden-print">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-font-awesome" aria-hidden="true"></i> Font Awesome</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="hidden-sm "><a href="../index.html">Home</a></li>
+        <li class="hidden-sm">
+          <a href="../whats-new/index.html">What's New</a>
+        </li>
+        <li class="hidden-xs hidden-md hidden-lg">
+          <a href="../whats-new/index.html">New</a>
+        </li>
+        <li class="hidden-sm active"><a href="index.html">Get Started</a></li>
+        <li class="hidden-xs hidden-md hidden-lg active">
+          <a href="index.html">Start</a>
+        </li>
+        <li class="dropdown-split-left"><a href="../icons/index.html">Icons</a></li>
+        <li class="dropdown dropdown-split-right hidden-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+            <span class="sr-only">Toggle dropdown menu</span>
+            <span class="toggle drop down"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="../icons/index.html"><i class="fa fa-flag fa-fw" aria-hidden="true"></i>&nbsp; All Icons</a></li>
+            <li class="divider"></li>
+            <li><a href="../icons/index.html#new"><i class="fa fa-handshake-o fa-fw" aria-hidden="true"></i>&nbsp; New Icons in 4.7</a></li>
+            <li><a href="../icons/index.html#web-application"><i class="fa fa-camera-retro fa-fw" aria-hidden="true"></i>&nbsp; Web Application Icons</a></li>
+            <li><a href="../icons/index.html#accessibility"><i class="fa fa-universal-access fa-fw" aria-hidden="true"></i>&nbsp; Accessibility Icons</a></li>
+            <li><a href="../icons/index.html#hand"><i class="fa fa-hand-spock-o fa-fw" aria-hidden="true"></i>&nbsp; Hand Icons</a></li>
+            <li><a href="../icons/index.html#transportation"><i class="fa fa-ship fa-fw" aria-hidden="true"></i>&nbsp; Transportation Icons</a></li>
+            <li><a href="../icons/index.html#gender"><i class="fa fa-venus fa-fw" aria-hidden="true"></i>&nbsp; Gender Icons</a></li>
+            <li><a href="../icons/index.html#file-type"><i class="fa fa-file-image-o fa-fw" aria-hidden="true"></i>&nbsp; File Type Icons</a></li>
+            <li><a href="../icons/index.html#spinner"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i>&nbsp; Spinner Icons</a></li>
+            <li><a href="../icons/index.html#form-control"><i class="fa fa-check-square fa-fw" aria-hidden="true"></i>&nbsp; Form Control Icons</a></li>
+            <li><a href="../icons/index.html#payment"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i>&nbsp; Payment Icons</a></li>
+            <li><a href="../icons/index.html#chart"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Chart Icons</a></li>
+            <li><a href="../icons/index.html#currency"><i class="fa fa-won fa-fw" aria-hidden="true"></i>&nbsp; Currency Icons</a></li>
+            <li><a href="../icons/index.html#text-editor"><i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i>&nbsp; Text Editor Icons</a></li>
+            <li><a href="../icons/index.html#directional"><i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>&nbsp; Directional Icons</a></li>
+            <li><a href="../icons/index.html#video-player"><i class="fa fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video Player Icons</a></li>
+            <li><a href="../icons/index.html#brand"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i>&nbsp; Brand Icons</a></li>
+            <li><a href="../icons/index.html#medical"><i class="fa fa-medkit fa-fw" aria-hidden="true"></i>&nbsp; Medical Icons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-split-left"><a href="../examples/index.html">Examples</a></li>
+        <li class="dropdown dropdown-split-right hidden-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+            <span class="sr-only">Toggle dropdown menu</span>
+            <span class="toggle drop down"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="../examples/index.html">Examples</a></li>
+            <li class="divider"></li>
+            <li><a href="../examples/index.html#basic">Basic Icons</a></li>
+            <li><a href="../examples/index.html#larger">Larger Icons</a></li>
+            <li><a href="../examples/index.html#fixed-width">Fixed Width Icons</a></li>
+            <li><a href="../examples/index.html#list">List Icons</a></li>
+            <li><a href="../examples/index.html#bordered-pulled">Bordered & Pulled Icons</a></li>
+            <li><a href="../examples/index.html#animated">Animated Icons</a></li>
+            <li><a href="../examples/index.html#accessible">Accessibility-Minded</a></li>
+            <li><a href="../examples/index.html#rotated-flipped">Rotated &amp; Flipped Icons</a></li>
+            <li><a href="../examples/index.html#stacked">Stacked Icons</a></li>
+            <li><a href="../examples/index.html#bootstrap">Bootstrap 3 Examples</a></li>
+            <li><a href="../examples/index.html#custom">Custom CSS</a></li>
+          </ul>
+        </li>
+        <li class="hidden-sm"><a href="../accessibility/index.html">Accessibility</a></li>
+        <li class="hidden-xs hidden-md hidden-lg"><a href="../accessibility/index.html"><i class="fa fa-universal-access"></i></a></li>
+        <li><a href="../community/index.html">Community</a></li>
+        <li><a href="../license/index.html">License</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/assets/font-awesome-4.7.0.zip" target="_blank"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+<div class="jumbotron jumbotron-ad hidden-print">
+  <div class="container">
+    
+    <h1><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp; Get Started</h1>
+    <p>Easy ways to get Font Awesome 4.7.0 onto your website</p>
+    
+  </div>
+</div>
+<div class="content-underlay" style="padding-bottom:137px"></div>
+<div class="container">
+  <section class="get-started-cdn" id="get-started-cdn">
+    <h2 class="page-header margin-top-lg clearfix">
+      Font Awesome CDN
+      <span class="label label-brand text-base pull-right">Easiest</span>
+    </h2>
+    <p class="lead">Font Awesome CDN is the easiest way to get Font Awesome on your website or app, all with just a single line of code. No downloading or installing!</p>
+    <form class="row">
+      <div class="col-sm-10 signup-input">
+        <label for="email" class="sr-only">Email address</label>
+        <input type="url" class="form-control input-lg margin-bottom" id="cdn-url" value="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" onclick="select(this);" readonly>
+      </div>
+      <div class="col-sm-2 signup-button">
+        <button type="button" class="btn btn-success btn-lg btn-block margin-bottom" onclick="copyCdnUrl();">Copy URL</button>
+      </div>
+    </form>
+    <div class="collapse" id="cdn-why-email">
+      <div class="well">
+        We create new embed codes for each website so you can quickly upgrade and change your preferences all without ever pushing code. To do this, we need an email
+        address so we know which embed codes are yours and so you can come back and manage them.
+      </div>
+    </div>
+    <div class="row margin-bottom-none">
+      <div class="col-sm-6 col-md-3">
+        <h4>Icons on your site. Fast.</h4>
+        <p>Don't mess with files locally or in production. You'll get all of Font Awesome's 675 icons plus CSS toolkit - all optimized for speed and no hassle.</p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h4>Super-simple upgrades</h4>
+        <p>Since each site gets a unique embed code, you can easily upgrade to the latest version of Font Awesome, all without pushing any code. Easy peasy.</p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h4>Auto accessibility support</h4>
+        <p>Font Awesome CDN helps you automate accessibility support more easily so your icons work for the most people possible. Read up on our <a href="../accessibility/index.html">accessibility best practices</a>.</p>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <h4>Async your icons</h4>
+        <p>Want to speed up your page loads? So do we. Have your icons load in the background so your site loads faster.</p>
+      </div>
+    </div>
+  </section>
+  <div class="hr margin-top-xl">
+    <span class="hr-text text-xl text-muted">or</span>
+  </div>
+  <section class="get-started-download" id="get-started-download">
+    <h2 class="page-header clearfix">
+      Download &amp; Customize
+      <span class="label label-default text-base pull-right">Easy</span>
+    </h2>
+    <div class="row">
+      <div class="col-md-9">
+        <p class="text-lg">
+          Want to manage and host Font Awesome assets yourself? You can
+          <a href="/assets/font-awesome-4.7.0.zip" target="_blank">download</a>,
+          customize, and use the icons and default styling manually. Both CSS and CSS Preprocessor (Sass and Less) formats are included.</p>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-default btn-lg btn-block" href="/assets/font-awesome-4.7.0.zip" target="_blank">
+          <i class="fa fa-download fa-lg margin-right-sm"></i>
+          Download
+        </a>
+      </div>
+    </div>
+    <div class="download-css margin-bottom-xl" id="download-css">
+      <h3>Using CSS</h3>
+      <ol>
+        <li>Copy the entire <code>font-awesome</code> directory into your project.</li>
+        <li>
+          In the <code>&lt;head&gt;</code> of your html, reference the location to your font-awesome.min.css.
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;path/to/font-awesome/css/font-awesome.min.css&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+        </li>
+        <li>Check out the <a href="../examples/index.html">examples</a> to start using Font Awesome!</li>
+      </ol>
+    </div>
+    <div class="download-preprocessors" id="download-preprocessors">
+      <h3>Using Sass or Less</h3>
+      <p>Use this method to customize Font Awesome 4.7.0 using Less or Sass.</p>
+      <ol>
+        <li>Copy the <code>font-awesome/</code> directory into your project.</li>
+        <li>
+          Open your project's <code>font-awesome/less/variables.less</code> or <code>font-awesome/scss/_variables.scss</code> and edit the <code>@fa-font-path</code> or <code>$fa-font-path</code>
+          variable to point to your font directory.
+<div class="highlight"><pre><code class="scss"><span class="k">@fa-font-path</span><span class="nd">:</span>   <span class="s2">&quot;../font&quot;</span><span class="o">;</span>
+</code></pre></div>
+          <p class="alert alert-success"><i class="fa fa-info-circle"></i> The font path is relative from your compiled CSS directory.</p>
+        </li>
+        <li>Re-compile your Less or Sass if using a static compiler. Otherwise, you should be good to go.</li>
+        <li>Check out the <a href="../examples/index.html">examples</a> to start using Font Awesome!</li>
+      </ol>
+    </div>
+  </section>
+  <div class="hr margin-top-lg">
+    <span class="hr-text text-xl text-muted">or</span>
+  </div>
+  <section class="get-started-advanced" id="get-started-advanced">
+    <h2 class="page-header clearfix">
+      Advanced &amp; Packages
+      <span class="label label-default text-base pull-right">Pro</span>
+    </h2>
+    <div class="ruby-gem-less margin-bottom-xl" id="ruby-gem-less">
+      <h3><a href="https://github.com/FortAwesome/font-awesome-less">Less Ruby Gem</a></h3>
+      <p>
+        Use the <a href="https://github.com/FortAwesome/font-awesome-less">Official Font Awesome Less Ruby Gem</a> to easily get Font
+        Awesome Less into a Rails project. Generously maintained by <a href="https://twitter.com/supercodepoet/">@supercodepoet</a>.
+      </p>
+      <ol>
+        <li>
+          Add this line to your application's Gemfile:
+<div class="highlight"><pre><code class="bash">gem <span class="s1">&#39;font-awesome-less&#39;</span>
+</code></pre></div>
+        </li>
+        <li>
+          And then execute:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>bundle
+</code></pre></div>
+        </li>
+        <li>Or install it yourself as:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>gem install font-awesome-less
+</code></pre></div>
+        </li>
+      </ol>
+      <p>
+      If you use Rails, add this to your e.g. <code>application.less</code>:
+      </p>
+<div class="highlight"><pre><code class="css"><span class="k">@import</span> <span class="s2">&quot;font-awesome-sprockets&quot;</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">&quot;font-awesome&quot;</span><span class="p">;</span>
+</code></pre></div>
+    </div>
+    <div class="ruby-gem-sass" id="ruby-gem-sass">
+      <h3><a href="https://github.com/FortAwesome/font-awesome-sass">Sass Ruby Gem</a></h3>
+      <p>
+        Use the <a href="https://github.com/FortAwesome/font-awesome-sass">Official Font Awesome Sass Ruby Gem</a> to easily get Font
+        Awesome Sass into a Rails or Compass project. Generously maintained by <a href="https://twitter.com/supercodepoet/">@supercodepoet</a>.
+      </p>
+      <ol>
+        <li>
+          Add this line to your application's Gemfile:
+<div class="highlight"><pre><code class="bash">gem <span class="s1">&#39;font-awesome-sass&#39;</span>
+</code></pre></div>
+        </li>
+        <li>
+          And then execute:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>bundle
+</code></pre></div>
+        </li>
+        <li>Or install it yourself as:
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>gem install font-awesome-sass
+</code></pre></div>
+        </li>
+      </ol>
+      <p>
+      If you use Rails, add this to your e.g. <code>application.scss</code>:
+      </p>
+<div class="highlight"><pre><code class="css"><span class="k">@import</span> <span class="s2">&quot;font-awesome-sprockets&quot;</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">&quot;font-awesome&quot;</span><span class="p">;</span>
+</code></pre></div>
+    </div>
+  </section>
+  <section class="get-started-more margin-top-lg" id="get-started-more">
+    <h2 class="page-header">More Information</h2>
+  </section>
+  <div class="row">
+    <div class="col-md-6" id="support-validators">
+      <h4>Validators</h4>
+      <p>In order to provide the best possible experience to old and buggy browsers, Font Awesome uses <a href="http://browserhacks.com/">CSS browser hacks</a> in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.</p>
+      <p>These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.</p>
+      <p><a href="http://getbootstrap.com/getting-started/#support-validators">Getting started - Validators</a> by <a href="http://getbootstrap.com/about/#team">Bootstrap Team</a> is licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+    </div>
+    <div class="col-md-6" id="ie8-font-face">
+      <h4>Internet Explorer 8 and @font-face</h4>
+      <p>IE8 has some issues with <code>@font-face</code> when combined with <code>:before</code>.
+        Font Awesome uses that combination. If a page is cached, and loaded without the mouse over the window
+        (i.e. hit the refresh button or load something in an iframe) then the page gets rendered before the font loads.
+        Hovering over the page (body) will show some of the icons and hovering over the remaining icons will show those as well.
+        <a href="https://github.com/FortAwesome/Font-Awesome/issues/954">See issue #954</a> for details.</p>
+      <p><a href="http://getbootstrap.com/getting-started/#support-ie8-font-face">Getting started - Internet Explorer 8 and @font-face</a> by <a href="http://getbootstrap.com/about/#team">Bootstrap Team</a> is licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6" id="need-ie7">
+      <h4>Need IE7 Support?</h4>
+      <p>
+        If you need IE7 support, you have my condolences. Really. Font Awesome 4.7.0
+        doesn't support IE7, but an older version does. You'll need to check out the
+        <a href="https://fontawesome.com/v3.2.1/get-started/#need-ie7">3.2.1 instructions for using IE7</a>. Then go complain to
+        whoever decided your project needs IE7 support.
+      </p>
+    </div>
+    <div class="col-md-6" id="troubleshooting">
+      <h4>Troubleshooting</h4>
+      <p>If you're having trouble with Font Awesome, make sure to check out the
+        <a href="https://github.com/FortAwesome/Font-Awesome/wiki/Troubleshooting">troubleshooting wiki page</a>.
+        Generously maintained by <a href="https://twitter.com/gtagliala">@gtagliala</a>.</p>
+    </div>
+  </div>
+  </div>
+	<!-- Sponsored -->
+	<div class="container hidden-xs hidden-sm" style="padding:3rem 1rem 0 1rem;">
+		<iframe style="display:block;margin:0 auto;" src="https://adhub.one/rand/728x90" width="728" height="90" frameborder="0"></iframe>
+	</div>
+	<div class="container hidden-md hidden-lg" style="padding:0 1rem 3rem 1rem;">
+		<iframe style="display:block;margin:0 auto;" src="https://adhub.one/rand/300x250" width="300" height="250" frameborder="0"></iframe>
+	</div>
+  <footer id="footer" class="footer hidden-print">
+  <div class="container text-center">
+    <div>
+      <i class="fa fa-flag" aria-hidden="true"></i> Font Awesome 4.7.0
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Created by <a href="https://fontawesome.com/" rel="noreferrer noopener">Font Awesome</a>
+    </div>
+    <div>
+      Font Awesome licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Code licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>
+      <span class="hide-xs hide-sm">&middot;</span><br class="hide-md hide-lg">
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+    </div>
+    <div>
+      Thanks to <a href="http://tracking.maxcdn.com/c/148092/3982/378/"><i class="fa fa-maxcdn"></i> MaxCDN</a> for providing the excellent <a href="https://www.bootstrapcdn.com/fontawesome/">BootstrapCDN for Font Awesome</a>
+    </div>
+    <div class="project">
+      <a href="https://github.com/FortAwesome/Font-Awesome">GitHub Project</a> &middot;
+      <a href="https://github.com/FortAwesome/Font-Awesome/issues">Issues</a>
+    </div>
+  </div>
+</footer>
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/jquery.validate.min.js"></script>
+  <script src="../assets/js/libs/bootstrap.min.js"></script>
+  <script src="../assets/js/libs/algoliasearch.jquery.min.js"></script>
+  <script src="../assets/js/libs/algoliasearch.helper.min.js"></script>
+  <script src="../assets/js/libs/underscore-min.js"></script>
+  <script src="../assets/js/libs/backbone-min.js"></script>
+  <script src="../assets/js/libs/jsdelivr-rum.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/search.js"></script>
+  </body>
+</html>
