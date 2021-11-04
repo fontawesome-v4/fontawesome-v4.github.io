@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Font Awesome, the iconic font and CSS framework">
+  <meta name="author" content="Dave Gandy">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+  <title>Font Awesome & Accessibility</title>
+  <!-- CSS
+  ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/css/pygments.css">
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-212023213-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = 'https:' == document.location.protocol ? 'https://ssl' : 'http://www' + '.google-analytics.com/ga.js';
+      var s = document.scripts[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body class="font-awesome v-accessibility">
+  <div id="wrap">
+<div class="navbar navbar-inverse navbar-static-top hidden-print">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-font-awesome" aria-hidden="true"></i> Font Awesome</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="hidden-sm "><a href="../index.html">Home</a></li>
+        <li class="hidden-sm">
+          <a href="../whats-new/index.html">What's New</a>
+        </li>
+        <li class="hidden-xs hidden-md hidden-lg">
+          <a href="../whats-new/index.html">New</a>
+        </li>
+        <li class="hidden-sm"><a href="../get-started/index.html">Get Started</a></li>
+        <li class="hidden-xs hidden-md hidden-lg">
+          <a href="../get-started/index.html">Start</a>
+        </li>
+        <li class="dropdown-split-left"><a href="../icons/index.html">Icons</a></li>
+        <li class="dropdown dropdown-split-right hidden-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+            <span class="sr-only">Toggle dropdown menu</span>
+            <span class="toggle drop down"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="../icons/index.html"><i class="fa fa-flag fa-fw" aria-hidden="true"></i>&nbsp; All Icons</a></li>
+            <li class="divider"></li>
+            <li><a href="../icons/index.html#new"><i class="fa fa-handshake-o fa-fw" aria-hidden="true"></i>&nbsp; New Icons in 4.7</a></li>
+            <li><a href="../icons/index.html#web-application"><i class="fa fa-camera-retro fa-fw" aria-hidden="true"></i>&nbsp; Web Application Icons</a></li>
+            <li><a href="../icons/index.html#accessibility"><i class="fa fa-universal-access fa-fw" aria-hidden="true"></i>&nbsp; Accessibility Icons</a></li>
+            <li><a href="../icons/index.html#hand"><i class="fa fa-hand-spock-o fa-fw" aria-hidden="true"></i>&nbsp; Hand Icons</a></li>
+            <li><a href="../icons/index.html#transportation"><i class="fa fa-ship fa-fw" aria-hidden="true"></i>&nbsp; Transportation Icons</a></li>
+            <li><a href="../icons/index.html#gender"><i class="fa fa-venus fa-fw" aria-hidden="true"></i>&nbsp; Gender Icons</a></li>
+            <li><a href="../icons/index.html#file-type"><i class="fa fa-file-image-o fa-fw" aria-hidden="true"></i>&nbsp; File Type Icons</a></li>
+            <li><a href="../icons/index.html#spinner"><i class="fa fa-spinner fa-fw" aria-hidden="true"></i>&nbsp; Spinner Icons</a></li>
+            <li><a href="../icons/index.html#form-control"><i class="fa fa-check-square fa-fw" aria-hidden="true"></i>&nbsp; Form Control Icons</a></li>
+            <li><a href="../icons/index.html#payment"><i class="fa fa-credit-card fa-fw" aria-hidden="true"></i>&nbsp; Payment Icons</a></li>
+            <li><a href="../icons/index.html#chart"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Chart Icons</a></li>
+            <li><a href="../icons/index.html#currency"><i class="fa fa-won fa-fw" aria-hidden="true"></i>&nbsp; Currency Icons</a></li>
+            <li><a href="../icons/index.html#text-editor"><i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i>&nbsp; Text Editor Icons</a></li>
+            <li><a href="../icons/index.html#directional"><i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>&nbsp; Directional Icons</a></li>
+            <li><a href="../icons/index.html#video-player"><i class="fa fa-play-circle fa-fw" aria-hidden="true"></i>&nbsp; Video Player Icons</a></li>
+            <li><a href="../icons/index.html#brand"><i class="fa fa-facebook-official fa-fw" aria-hidden="true"></i>&nbsp; Brand Icons</a></li>
+            <li><a href="../icons/index.html#medical"><i class="fa fa-medkit fa-fw" aria-hidden="true"></i>&nbsp; Medical Icons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-split-left"><a href="../examples/index.html">Examples</a></li>
+        <li class="dropdown dropdown-split-right hidden-xs">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+            <span class="sr-only">Toggle dropdown menu</span>
+            <span class="toggle drop down"></span>
+          </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="../examples/index.html">Examples</a></li>
+            <li class="divider"></li>
+            <li><a href="../examples/index.html#basic">Basic Icons</a></li>
+            <li><a href="../examples/index.html#larger">Larger Icons</a></li>
+            <li><a href="../examples/index.html#fixed-width">Fixed Width Icons</a></li>
+            <li><a href="../examples/index.html#list">List Icons</a></li>
+            <li><a href="../examples/index.html#bordered-pulled">Bordered & Pulled Icons</a></li>
+            <li><a href="../examples/index.html#animated">Animated Icons</a></li>
+            <li><a href="../examples/index.html#accessible">Accessibility-Minded</a></li>
+            <li><a href="../examples/index.html#rotated-flipped">Rotated &amp; Flipped Icons</a></li>
+            <li><a href="../examples/index.html#stacked">Stacked Icons</a></li>
+            <li><a href="../examples/index.html#bootstrap">Bootstrap 3 Examples</a></li>
+            <li><a href="../examples/index.html#custom">Custom CSS</a></li>
+          </ul>
+        </li>
+        <li class="hidden-sm active"><a href="index.html">Accessibility</a></li>
+        <li class="hidden-xs hidden-md hidden-lg active"><a href="index.html"><i class="fa fa-universal-access"></i></a></li>
+        <li><a href="../community/index.html">Community</a></li>
+        <li><a href="../license/index.html">License</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/assets/font-awesome-4.7.0.zip" target="_blank"><i class="fa fa-cloud-download" aria-hidden="true"></i> Download</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="jumbotron jumbotron-ad hidden-print">
+  <div class="container">
+    <h1><i class="fa fa-universal-access" aria-hidden="true"></i>&nbsp; Accessibility</h1>
+    <p>Make your icons awesome for all of your users</p>
+  </div>
+</div>
+<div class="container">
+  <section id="accessibility-intro" class="accessibility-intro">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="lead">
+          Icons are symbols that can convey a ton of information and really help people comprehend directions, signs, and interfaces. It's important that we create and use them so that they can reach the largest amount of people possible.
+        </p>
+      </div>
+      <div class="col-md-6">
+          <div id="accessibility-background">
+  <h4 class="margin-top-none">About Icon Fonts &amp; Accessibility</h4>
+  <p>
+    Modern versions of assistive technology, like screen readers, will read CSS generated content (how Font Awesome icons are rendered), as well as specific Unicode characters. When reading our default markup for rendering icons, assistive technology may have the following problems.
+  </p>
+  <ul>
+    <li>
+      The assistive technology may not find any content to read out to a user
+    </li>
+    <li>
+      The assistive technology may read the unicode equivalent, which could not match up to what the icon means in context, or worse is just plain confusing
+    </li>
+  </ul>
+</div>
+      </div>
+    </div>
+  </section>
+  <h2 class="page-header">
+    Using Font Awesome with Accessibility in mind
+  </h2>
+  <section id="accessibility-cdn" class="accessibility-cdn">
+  <div class="row">
+    <div class="col-md-8">
+      <h3>
+        <i class="gg-col fa fa-magic text-muted fa-lg padding-right" aria-hidden="true"></i>
+        Use Font Awesome CDN's auto accessibility
+      </h3>
+      <p><a href="../get-started/index.html#get-started-cdn">Font Awesome CDN</a> helps you automate accessibility support more easily so your icons work for the most people possible. You only need turn on a setting, <a href="https://cdn.fontawesome.com/help#qa-autoa11y">use our simple syntax</a>, and any icons you use will have all of the best practices and manual techniques below <strong>applied automatically</strong>.</p>
+    </div>
+    <div class="col-md-4">
+      <a href="../get-started/index.html#get-started-cdn" class="btn btn-success btn-block btn-lg margin-top-lg margin-bottom">Automate Your Icons' Accessibility</a>
+      <p class="text-sm text-center margin-bottom-none">
+        <a href="https://cdn.fontawesome.com/help#qa-autoa11y">Read more about our auto accessibility</a>
+      </p>
+    </div>
+  </div>
+</section>
+  <div class="hr margin-top-xl">
+    <span class="hr-text text-xl text-muted">or</span>
+  </div>
+  <section id="accessibility-manual" class="accessibility-manual">
+  <h3>
+    <i class="gg-col fa fa-wrench text-muted fa-lg padding-right" aria-hidden="true"></i>
+    Manually make your icons accessible
+  </h3>
+  <p>When using icons in your UI, there are manual techniques and ways to help assistive technology either ignore or better understand Font Awesome.</p>
+  <h4 class="margin-top-xl">Icons used for pure decoration or visual styling</h4>
+  <p>If you're using an icon to add some extra decoration or branding, it does not need to be announced to users as they are navigating your site or app aurally. Additionally, if you're using an icon to visually re-emphasize or add styling to content already present in your HTML, it does not need to be repeated to an assistive technology-using user. You can make sure this is not read by adding the <code>aria-hidden="true"</code> to your Font Awesome markup.</p>
+  <div class="margin-top-lg margin-bottom-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-fighter-jet&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+</code></pre></div>
+<small class="text-muted">an icon being used as pure decoration</small>
+  </div>
+  <div class="margin-bottom-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;logo&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-pied-piper&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+  Pied Piper, A Middle-Out Compression Solution Making Data Storage Problems Smaller
+<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div>
+<small class="text-muted">an icon being used as a logo</small>
+  </div>
+  <div class="margin-bottom-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://github.com/FortAwesome/Font-Awesome&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-github&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/i&gt;</span> View this project&#39;s code on Github<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<small class="text-muted">an icon being used in front of link text</small>
+  </div>
+  <h4 class="margin-top-xl">Icons with semantic or interactive purpose</h4>
+  <p>
+    If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies. This goes for content you're abbreviating via icons as well as interactive controls (buttons, form elements, toggles, etc.). There are a few techniques to accomplish this:
+  </p>
+  <h4 class="margin-top-xl text-muted">If an icon is <strong>not</strong> an interactive element</h4>
+  <p>
+    The simplest way to provide a text alternative is to use the <code>aria-hidden="true"</code> attribute on the icon and to include the text with an additional element, such as a <code>&lt;span&gt;</code>, with appropriate CSS to visually hide the element while keeping it accessible to assistive technologies. In addition, you can add a <code>title</code> attribute on the icon to provide a tooltip for sighted mouse users.
+  </p>
+  <div class="margin-bottom-lg margin-top-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-car&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">title=</span><span class="s">&quot;Time to destination by car&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>Time to destination by car:<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>4 minutes<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-bicycle&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">title=</span><span class="s">&quot;Time to destination by bike&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>Time to destination by bike:<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>12 minutes<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</code></pre></div>
+    <small class="text-muted">an icon being used to communicate travel methods</small>
+  </div>
+  <div class="margin-bottom-lg margin-top-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-hourglass&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">title=</span><span class="s">&quot;60 minutes remain in your exam&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>60 minutes remain in your exam<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-hourglass-half&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">title=</span><span class="s">&quot;30 minutes remain in your exam&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>30 minutes remain in your exam<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-hourglass-end&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">title=</span><span class="s">&quot;0 minutes remain in your exam&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>0 minutes remain in your exam<span class="nt">&lt;/span&gt;</span>
+</code></pre></div>
+    <small class="text-muted">an icon being used to denote time remaining</small>
+  </div>
+  <h4 class="margin-top-xl text-muted">If an icon represents an interactive element</h4>
+  <p>
+    In the case of focusable interactive elements, there are various options to include an alternative text or label to the element, without the need for any visually hidden <code>&lt;span&gt;</code> or similar. For instance, simply adding the <code>aria-label</code> attribute with a text description to the interactive element itself will be sufficient to provide an accessible alternative name for the element. If you need to provide a visual tooltip on mouseover/focus, we recommend additionally using the <code>title</code> attribute or a <a href="../../../github.com/chinchang/hint.html">custom tooltip</a> solution.
+  </p>
+  <div class="margin-bottom-lg margin-top-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;path/to/shopping/cart&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;View 3 items in your shopping cart&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-shopping-cart&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+    <small class="text-muted">an icon being used to communicate shopping cart state</small>
+  </div>
+  <div class="margin-bottom-lg margin-top-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#navigation-main&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;Skip to main navigation&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-bars&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+    <small class="text-muted">an icon being used as a link to a navigation menu</small>
+  </div>
+  <div class="margin-bottom-lg margin-top-lg">
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger&quot;</span> <span class="na">href=</span><span class="s">&quot;path/to/settings&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;Delete&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-trash-o&quot;</span> <span class="na">aria-hidden=</span><span class="s">&quot;true&quot;</span> <span class="na">title=</span><span class="s">&quot;Delete this item?&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+    <small class="text-muted">an icon being used as a delete button's symbol with a <code>title</code> attribute to provide a native mouse tooltip</small>
+  </div>
+  <div class="alert alert-success">
+    <ul class="fa-ul margin-bottom-none">
+      <li>
+        <i class="fa-li fa fa-info-circle fa-lg" aria-hidden"true"></i>
+        <a href="../examples/index.html#accessible">See more examples of how to add accessibility-minded icons</a> into your UI.
+      </li>
+    </ul>
+  </div>
+</section>
+  <section id="accessibility-other" class="accessibility-other">
+  <h2 class="page-header">Other cases and information</h2>
+  <p>
+    While the scenarios and techniques here help avoid some serious issues and confusion, they are not exhaustive. There are many complex contexts and use cases when it comes to accessibility, such as users with low vision who need a high color contrast ratio to see UI. There are some great tools and resources to learn from and work on these issues out there. Here are a few reads we recommend.
+  </p>
+  <ul>
+    <li><a href="https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html">https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html</a></li>
+    <li><a href="https://css-tricks.com/html-for-icon-font-usage/">https://css-tricks.com/html-for-icon-font-usage/</a></li>
+    <li><a href="http://www.sitepoint.com/icon-fonts-vs-svg-debate/">http://www.sitepoint.com/icon-fonts-vs-svg-debate/</a></li>
+    <li><a href="http://leaverou.github.io/contrast-ratio">http://leaverou.github.io/contrast-ratio/</a></li>
+  </ul>
+  <p>
+    We'll continue to work on these under the larger topic of accessibility, but in the meantime, <a href="../community/index.html#reporting-bugs">let us know if any bugs or issues</a>.
+  </p>
+</section>
+</div>
+  </div>
+<!-- Sponsored -->
+<div class="container hidden-xs hidden-sm" style="padding:3rem 1rem;">
+	<iframe style="display:block;margin:0 auto;" src="https://adhub.one/rand/728x90" width="728" height="90" frameborder="0"></iframe>
+</div>
+<div class="container hidden-md hidden-lg" style="padding:3rem 1rem;">
+	<iframe style="display:block;margin:0 auto;" src="https://adhub.one/rand/300x250" width="300" height="250" frameborder="0"></iframe>
+</div>
+  <footer id="footer" class="footer hidden-print">
+  <div class="container text-center">
+    <div>
+      <i class="fa fa-flag" aria-hidden="true"></i> Font Awesome 4.7.0
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Created by <a href="https://fontawesome.com/" rel="noreferrer noopener">Font Awesome</a>
+    </div>
+    <div>
+      Font Awesome licensed under <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>
+      <span class="hide-xs">&middot;</span><br class="hide-sm hide-md hide-lg">
+      Code licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>
+      <span class="hide-xs hide-sm">&middot;</span><br class="hide-md hide-lg">
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+    </div>
+    <div>
+      Thanks to <a href="http://tracking.maxcdn.com/c/148092/3982/378/"><i class="fa fa-maxcdn"></i> MaxCDN</a> for providing the excellent <a href="https://www.bootstrapcdn.com/fontawesome/">BootstrapCDN for Font Awesome</a>
+    </div>
+    <div class="project">
+      <a href="https://github.com/FortAwesome/Font-Awesome">GitHub Project</a> &middot;
+      <a href="https://github.com/FortAwesome/Font-Awesome/issues">Issues</a>
+    </div>
+  </div>
+</footer>
+  <script src="../assets/js/libs/jquery.min.js"></script>
+  <script src="../assets/js/libs/jquery.validate.min.js"></script>
+  <script src="../assets/js/libs/bootstrap.min.js"></script>
+  <script src="../assets/js/libs/algoliasearch.jquery.min.js"></script>
+  <script src="../assets/js/libs/algoliasearch.helper.min.js"></script>
+  <script src="../assets/js/libs/underscore-min.js"></script>
+  <script src="../assets/js/libs/backbone-min.js"></script>
+  <script src="../assets/js/libs/jsdelivr-rum.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script src="../assets/js/search.js"></script>
+  </body>
+</html>
