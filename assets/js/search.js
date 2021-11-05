@@ -5,7 +5,7 @@ $(function() {
         },
 
         initialize: function() {
-            this.algolia = algoliasearch("FWTAMFVBKI", "201d8aa80e29808b945d16298b92fe21");
+            this.algolia = algoliasearch("FWTAMFVBKI", "34309b2a478d6e5516bcbf5f3c41b500");
             this.algoliaHelper = algoliasearchHelper(this.algolia, "fontawesome");
             this.template = _.template($("#results-template").html());
 
