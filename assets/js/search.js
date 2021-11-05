@@ -6,7 +6,7 @@ $(function() {
 
         initialize: function() {
             this.algolia = algoliasearch("FWTAMFVBKI", "201d8aa80e29808b945d16298b92fe21");
-            this.algoliaHelper = algoliasearchHelper(this.algolia, "font_awesome");
+            this.algoliaHelper = algoliasearchHelper(this.algolia, "fontawesome");
             this.template = _.template($("#results-template").html());
 
             this.$searchInput = this.$("#search-input");
