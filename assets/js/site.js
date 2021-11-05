@@ -1,15 +1,4 @@
 $(function () {
-  $("#newsletter").validate();
-
-  var ads = [
-    {
-      quote: "Get 2,000+ icons with Font Awesome Pro and <strong>ALL</strong> KS rewards for just $60!",
-      class: "fa5",
-      url: "https://fontawesome.com/?utm_source=font_awesome_homepage&utm_medium=display&utm_campaign=fa5_released&utm_content=banner",
-      btn_text: "Check out FA Pro &nbsp;<i class='fas fas-external-link'></i>",
-    },
-  ];
-
   // selectAd();
 
   // start the icon carousel
